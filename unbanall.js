@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const config = require('../config.json')
 
-//comando pra desbanir todos os usuários abaixo
+//comando pra desbanir todos os usuários
 module.exports.run = async (client, message) => {
     if(message.author.id !== 'seu_id') return;
     message.delete(); // apaga a mensagem após o uso do comando
